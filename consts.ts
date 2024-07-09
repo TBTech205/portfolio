@@ -69,6 +69,7 @@ export const work = [
     icon: 'https://spotity.vercel.app/favicon.ico',
     description: 'A Spotify clone',
     url: 'https://spotity.vercel.app/',
+    thumbnail: '/spotity_desktop.png',
     position: 1
   },
   {
@@ -76,6 +77,7 @@ export const work = [
     icon: 'https://freeflixx.vercel.app/favicon.ico',
     description: 'A Netflix clone',
     url: 'https://freeflixx.vercel.app/',
+    thumbnail: '/freeflixx_desktop.png',
     position: 2
   },
   {
@@ -83,6 +85,7 @@ export const work = [
     icon: 'https://tbtech-ai-genius.vercel.app//favicon.ico',
     description: 'A ai generator for text, images, and more',
     url: 'https://tbtech-ai-genius.vercel.app/',
+    thumbnail: '/genius_desktop.png',
     position: 1
   },
 
@@ -91,6 +94,7 @@ export const work = [
     icon: 'https://quoter.vercel.app/favicon.ico',
     description: 'A quote generator in the style of ytshorts',
     url: 'https://quoter-gen.vercel.app/',
+    thumbnail: '/quotes_desktop.png',
     position: 2
   }
 ]

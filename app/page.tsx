@@ -17,7 +17,7 @@ export default function Home() {
             <div className='border-t-4 border-solid border-indigo-600 w-full h-0'></div>
           </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente dolor quia quo a dolorem. Aut, consequuntur nesciunt asperiores quidem corrupti eligendi tempore dicta, repellendus nam ducimus minima distinctio enim aspernatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ipsam at in voluptates! Fuga aperiam ut magnam autem, dolor excepturi pariatur debitis, vero ad consectetur nobis, expedita cumque dignissimos ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non veniam quas ex est nam, velit, exercitationem maxime expedita debitis, natus voluptatibus tenetur quod id eaque. Cumque laboriosam tempore accusamus.</p>
+          <p>oh dear, what do I put here.</p>
 
           <div className='flex justify-center items-center gap-2 mt-6'>
             {socials.map((social) => (
@@ -60,7 +60,7 @@ export default function Home() {
                 work.position === 1 ? 'flex-row' : 'flex-row-reverse'
               )}>
                 <img 
-                  src=""
+                  src={work.thumbnail}
                   alt="Big image"
                   className='h-[254px]' 
                 />
