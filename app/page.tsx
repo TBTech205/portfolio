@@ -52,31 +52,29 @@ export default function Home() {
             <div className='border-t-4 border-solid border-indigo-600 w-full h-0'></div>
           </div>
 
-          <div className=''>
-            {/* Work */}
-            {work.map((work) => (
-              <div key={work.name} className={cn(
-                'flex justify-center items-center gap-6 h-full w-full mb-6 last:mb-0',
-                work.position === 1 ? 'flex-row' : 'flex-row-reverse'
-              )}>
-                <img 
-                  src={work.thumbnail}
-                  alt="Big image"
-                  className='h-[254px]' 
-                />
-                <div className='h-full w-96'>
-                  <div className='flex items-center gap-1 mb-2'>
-                    <img src={work.icon} alt={work.name} className='h-8 w-8' />
-                    <h2 className='text-2xl font-semibold'>{work.name}</h2>
-                  </div>
-                  
-                  <p className='mb-3'>{work.description}</p>
-
-                  <a href={work.url} className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View</a>
+          {/* Work */}
+          {work.map((work) => (
+            <div key={work.name} className={cn(
+              'flex justify-center items-center gap-6 h-full w-full mb-6 last:mb-0',
+              work.position === 1 ? 'flex-col lg:flex-row' : 'flex-col lg:flex-row-reverse'
+            )}>
+              <img 
+                src={work.thumbnail}
+                alt="Big image"
+                className='h-auto lg:h-[254px]' 
+              />
+              <div className='w-full lg:w-96'>
+                <div className='flex items-center gap-1 mb-2'>
+                  <img src={work.icon} alt={work.name} className='h-8 w-8' />
+                  <h2 className='text-2xl font-semibold'>{work.name}</h2>
                 </div>
+                
+                <p className='mb-3'>{work.description}</p>
+
+                <a href={work.url} className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View</a>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
 
