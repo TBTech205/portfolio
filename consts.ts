@@ -23,7 +23,7 @@ export const skills = [
   },
   {
     name: 'CSS',
-    icon: 'https://www.w3.org/Style/CSS/Overview.en.html',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg',
   },
   {
     name: 'TypeScript',
@@ -31,7 +31,7 @@ export const skills = [
   },
   {
     name: 'JavaScript',
-    icon: 'https://www.javascript.com/favicon.ico',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
   },
   {
     name: 'MongoDB',

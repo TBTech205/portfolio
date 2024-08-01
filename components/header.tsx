@@ -1,5 +1,5 @@
 "use client"
-import React, { use, useState } from 'react'
+import React, { useState } from 'react'
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Dialog, DialogPanel } from '@headlessui/react'
@@ -15,7 +15,16 @@ const navigation = [
 
 export default function Header() {
   const { setTheme, theme } = useTheme()
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  React.useEffect(() => {
+    fetch('/api/vist', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  }, []);
 
   return (
     <div>
@@ -26,7 +35,7 @@ export default function Header() {
               <span className="sr-only">TylerBea</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
                 alt=""
               />
             </a>
@@ -127,7 +136,7 @@ export default function Header() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#contact"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 Contat me
               </a>
