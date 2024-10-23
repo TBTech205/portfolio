@@ -3,7 +3,6 @@
 import React from 'react';
 import { socials } from '@/consts';
 import { Mail } from 'lucide-react';
-import prismadb from '@/lib/prismadb';
 
 export default function Contact() {
   return (
@@ -29,15 +28,6 @@ export default function Contact() {
             key={social.name} 
             href={social.url} 
             className='p-2 border-2 border-solid border-white rounded-md'
-            onClick={() => {
-              fetch('/api/linkClick', {
-                method: 'POST',
-                body: JSON.stringify({ url: social.url }),
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-              });
-            }}
           >
             <img src={social.icon} alt={social.name} className='h-7' />
           </a>

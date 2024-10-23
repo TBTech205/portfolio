@@ -51,7 +51,7 @@ export const skills = [
   },
   {
     name: 'Tailwind CSS',
-    icon: 'https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500',
+    icon: 'https://static.frontendmasters.com/assets/courses/2023-12-13-tailwind-css/thumb.webp',
   },
   {
     name: 'Node.js',
@@ -98,3 +98,5 @@ export const work = [
     position: 2
   }
 ]
+
+export const cv_link = "https://docs.google.com/document/d/e/2PACX-1vRf52HyOCZgBUkoCvAkQoK7RQcxfzmkeKNRVtXdltQ_OLUcQqg9IMoMwvX-9nTHYd_xRyN-KDnWMPqU/pub"

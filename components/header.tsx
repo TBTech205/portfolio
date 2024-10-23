@@ -17,15 +17,6 @@ export default function Header() {
   const { setTheme, theme } = useTheme()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  React.useEffect(() => {
-    fetch('/api/vist', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-  }, []);
-
   return (
     <div>
       <header className="absolute inset-x-0 top-0 z-50">
@@ -136,7 +127,7 @@ export default function Header() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#contact"
-                className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="rounded-md bg-blue-600 px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 Contat me
               </a>
