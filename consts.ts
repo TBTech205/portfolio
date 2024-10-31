@@ -99,4 +99,4 @@ export const work = [
   }
 ]
 
-export const cv_link = "https://docs.google.com/document/d/e/2PACX-1vRf52HyOCZgBUkoCvAkQoK7RQcxfzmkeKNRVtXdltQ_OLUcQqg9IMoMwvX-9nTHYd_xRyN-KDnWMPqU/pub"
+export const cv_link = "https://docs.google.com/document/d/e/2PACX-1vT1Zw-t6VOsaNF60LOQ_s9qcvU0hoiR0JEtTOxzWKsGWnKfV24njC2jMjOd_JK7CSf9PMWoEJepixjZ/pub"
