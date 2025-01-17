@@ -6,6 +6,8 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Button } from "@/components/ui/button"
 
+import { cv_link } from '@/consts';
+
 const navigation = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
@@ -124,13 +126,23 @@ export default function Header() {
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Developing the future of the web with the latest technologies to create the best user experience.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-4">
               <a
                 href="#contact"
                 className="rounded-md bg-blue-600 px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 Contat me
               </a>
+
+              <a
+              key={'resume link'}
+              href={cv_link}
+              target='_blank'
+              className="flex items-center gap-2 rounded-md bg-blue-600 px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            >
+              Resume
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
             </div>
           </div>
         </div>
